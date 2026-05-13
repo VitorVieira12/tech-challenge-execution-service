@@ -1,0 +1,10 @@
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.amqp.RabbitAutoConfiguration
+  data:
+    mongodb:
+      database: execution_service_test
+
+server:
+  port: 8082
