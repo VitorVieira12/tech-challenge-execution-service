@@ -61,8 +61,8 @@
         </dependency>
         <dependency>
             <groupId>de.flapdoodle.embed</groupId>
-            <artifactId>de.flapdoodle.embed.mongo.spring31x</artifactId>
-            <version>4.13.1</version>
+            <artifactId>de.flapdoodle.embed.mongo.spring3x</artifactId>
+            <version>4.17.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
