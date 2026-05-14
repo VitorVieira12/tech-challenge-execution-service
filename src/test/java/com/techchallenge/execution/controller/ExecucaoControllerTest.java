@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.techchallenge.execution.domain.model.Execucao;
 import com.techchallenge.execution.domain.model.StatusExecucao;
 import com.techchallenge.execution.domain.service.ExecucaoService;
+import com.techchallenge.execution.messaging.publisher.ExecucaoEventPublisher;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,7 @@ class ExecucaoControllerTest {
     @Autowired MockMvc mockMvc;
     @Autowired ObjectMapper objectMapper;
     @MockBean ExecucaoService execucaoService;
+    @MockBean ExecucaoEventPublisher execucaoEventPublisher;
 
     @Test
     @DisplayName("GET /execucoes deve retornar fila")
